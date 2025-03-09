@@ -1,0 +1,26 @@
+### To create a task
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+  "title": "Learn C++",
+  "description": "Complete the all c++ assignments assignment"
+}
+
+### to get all tasks
+GET http://localhost:3000/tasks
+
+### To get a Single task
+GET http://localhost:3000/tasks/1
+
+### Update a Task
+PUT http://localhost:3000/tasks/1
+Content-Type: application/json
+
+{
+  "title": "Learn DSA",
+  "description": "Complete the Express.js assignment"
+}
+
+### Delete a Task
+DELETE http://localhost:3000/tasks/4
